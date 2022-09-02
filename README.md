@@ -44,7 +44,7 @@ rtt min/avg/max/mdev = 253.414/258.182/267.999/5.776 ms
 
 ------------------------------------------------------------------------------------------------------
 
-• Selanjutnya, lakukan scanning port target untuk melihat port dan service yang open, dengan command :
+Selanjutnya, lakukan scanning port target untuk melihat port dan service yang open, dengan command :
 ```
 nmap -sV [ip target]
 ```
@@ -144,7 +144,7 @@ b40abdfe23665f766f9c61ecba8a4c19
 
 ### Walkthrough
 #### Task 1
-What does the acronym VM stand for?
+What does the acronym VM stand for? **enter**
 Answer : Virtual Machine
 
 #### Task 2
