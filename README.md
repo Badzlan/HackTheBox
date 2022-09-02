@@ -7,7 +7,6 @@ Pertama lakukan pengecekan apakah sudah ada tunnel ip target, dengan command :
 ```
 ifconfig
 ```
-
 ```
 ┌──(root㉿localhost)-[~]
 └─# ifconfig                                    
