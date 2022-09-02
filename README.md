@@ -3,7 +3,7 @@ Created By [Badzlan Nur Dhabith](https://www.linkedin.com/in/badzlannurdhabith/)
 
 ## Challenge : Meow
 ### Steps and Solutions
-Pertama lakukan pengecekan apakah sudah ada tunnel ip target, dengan command :
+• Pertama lakukan pengecekan apakah sudah ada tunnel ip target, dengan command :
 ```
 ifconfig
 ```
@@ -25,7 +25,7 @@ jika sudah ada tun0 berarti kita sudah connect dengan target dengan openvpn
 
 ------------------------------------------------------------------------------------------------------
 
-Lalu, cek apakah kita dan target sudah terhubung, dengan command :
+• Lalu, cek apakah kita dan target sudah terhubung, dengan command :
 ```
 ping [ip target]
 ```
@@ -44,7 +44,7 @@ rtt min/avg/max/mdev = 253.414/258.182/267.999/5.776 ms
 
 ------------------------------------------------------------------------------------------------------
 
-Selanjutnya, lakukan scanning port target untuk melihat port dan service yang open, dengan command :
+• Selanjutnya, lakukan scanning port target untuk melihat port dan service yang open, dengan command :
 ```
 nmap -sV [ip target]
 ```
@@ -66,7 +66,7 @@ dari hasil scanning terlihat bahwa port yang open adalah port 23 dengan service 
 
 ------------------------------------------------------------------------------------------------------
 
-Kemudian, kita coba telnet target untuk melihat file dan direktori target menggunakan command :
+• Kemudian, kita coba telnet target untuk melihat file dan direktori target menggunakan command :
 ```
 telnet [ip target]
 ```
