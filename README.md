@@ -26,4 +26,4 @@ Lalu, cek apakah kita dan target sudah terhubung dengan command :
 ```
 ping [ip target]
 ```
-![](https://carbon.now.sh/?bg=rgba%28255%2C255%2C255%2C1%29&t=3024-night&wt=sharp&l=text&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false)
+![](..\htb\iamge.png)
