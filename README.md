@@ -26,4 +26,4 @@ Lalu, cek apakah kita dan target sudah terhubung dengan command :
 ```
 ping [ip target]
 ```
-![](..\htb\iamge.png)
+
