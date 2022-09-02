@@ -26,3 +26,4 @@ Lalu, cek apakah kita dan target sudah terhubung dengan command :
 ```
 ping [ip target]
 ```
+![](https://github.com/Badzlan/htb/blob/main/image.png)
