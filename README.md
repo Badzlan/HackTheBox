@@ -7,7 +7,7 @@ Pertama lakukan pengecekan apakah sudah ada tunnel ip target, dengan command :
 ```
 ifconfig
 ```
-```kali
+```
 ┌──(root㉿localhost)-[~]
 └─# ifconfig                                    
 ...
@@ -20,4 +20,9 @@ tun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1500
         RX errors 0  dropped 0  overruns 0  frame 0
         TX packets 1  bytes 48 (48.0 B)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+```
+jika sudah ada tun0 berarti kita sudah connect dengan target dengan openvpn
+Lalu, cek apakah kita dan target sudah terhubung dengan command :
+```
+ping [ip target]
 ```
