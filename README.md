@@ -1,5 +1,5 @@
 # HackTheBox - Starting Point Walkthrough
-Created By [Badzlan Nur Dhabith](https://www.linkedin.com/in/badzlannurdhabith/){target="_blank"}
+Created By [Badzlan Nur Dhabith](https://www.linkedin.com/in/badzlannurdhabith/ target="_blank")
 
 ## Challenge : Meow
 ### Steps and Solutions
