@@ -7,6 +7,7 @@ Pertama lakukan pengecekan apakah sudah ada tunnel ip target, dengan command :
 ```
 ifconfig
 ```
+
 ```
 ┌──(root㉿localhost)-[~]
 └─# ifconfig                                    
@@ -28,6 +29,18 @@ Lalu, cek apakah kita dan target sudah terhubung, dengan command :
 ping [ip target]
 ```
 
+```
+┌──(root㉿localhost)-[~]
+└─# ping 10.129.49.229
+PING 10.129.49.229 (10.129.49.229) 56(84) bytes of data.
+64 bytes from 10.129.49.229: icmp_seq=1 ttl=63 time=253 ms
+64 bytes from 10.129.49.229: icmp_seq=3 ttl=63 time=268 ms
+64 bytes from 10.129.49.229: icmp_seq=4 ttl=63 time=257 ms
+64 bytes from 10.129.49.229: icmp_seq=5 ttl=63 time=255 ms
+--- 10.129.49.229 ping statistics ---
+5 packets transmitted, 4 received, 20% packet loss, time 4021ms
+rtt min/avg/max/mdev = 253.414/258.182/267.999/5.776 ms
+```
 Selanjutnya, lakukan scanning port target untuk melihat port dan service yang open, dengan command :
 ```
 nmap -sV [ip target]
