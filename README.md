@@ -23,7 +23,7 @@ tun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1500
 ```
 jika sudah ada tun0 berarti kita sudah connect dengan target dengan openvpn
 
-----------
+---
 
 Lalu, cek apakah kita dan target sudah terhubung, dengan command :
 ```
