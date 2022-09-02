@@ -4,26 +4,21 @@ Created By [Badzlan Nur Dhabith](https://www.linkedin.com/in/badzlannurdhabith/)
 ## Challenge : Meow
 ### Steps and Solutions
 Pertama lakukan pengecekan apakah sudah ada tunnel ip target, dengan command :
-```
-ifconfig
-```
-```
-┌──(root㉿localhost)-[~]
-└─# ifconfig                                    
-...
-tun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1500
-        inet 10.10.14.56  netmask 255.255.254.0  destination 10.10.14.56
-        inet6 dead:beef:2::1036  prefixlen 64  scopeid 0x0<global>
-        inet6 fe80::8e5c:baa2:365b:2370  prefixlen 64  scopeid 0x20<link>
-        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
-        RX packets 0  bytes 0 (0.0 B)
-        RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 1  bytes 48 (48.0 B)
-        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
-```
+``` ifconfig ```
 jika sudah ada tun0 berarti kita sudah connect dengan target dengan openvpn
-Lalu, cek apakah kita dan target sudah terhubung dengan command :
-```
-ping [ip target]
-```
 
+Lalu, cek apakah kita dan target sudah terhubung, dengan command :
+``` ping [ip target] ```
+
+Selanjutnya, lakukan scanning port target untuk melihat port dan service yang open, dengan command :
+``` nmap -sV [ip target] ```
+dari hasil scanning terlihat bahwa port yang open adalah port 23 dengan service telnet
+
+Kemudian, kita coba telnet target untuk melihat file dan direktori target menggunakan command :
+``` telnet [ip target] ```
+login sebagai root agar bisa masuk tanpa password
+
+Selanjutnya, kita coba lihat list file dan direktori target dengan command :
+```ls```
+ternyata ada file bernama flag.txt, lalu open file tersebut dengan command :
+```cat [nama file]```
