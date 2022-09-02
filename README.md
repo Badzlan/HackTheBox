@@ -22,12 +22,12 @@ tun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1500
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 ```
 jika sudah ada tun0 berarti kita sudah connect dengan target dengan openvpn
+------------------------------------------------------------------------------------------------------
 
 Lalu, cek apakah kita dan target sudah terhubung, dengan command :
 ```
 ping [ip target]
 ```
-
 ```
 ┌──(root㉿localhost)-[~]
 └─# ping 10.129.49.229
@@ -40,11 +40,28 @@ PING 10.129.49.229 (10.129.49.229) 56(84) bytes of data.
 5 packets transmitted, 4 received, 20% packet loss, time 4021ms
 rtt min/avg/max/mdev = 253.414/258.182/267.999/5.776 ms
 ```
+------------------------------------------------------------------------------------------------------
+
 Selanjutnya, lakukan scanning port target untuk melihat port dan service yang open, dengan command :
 ```
 nmap -sV [ip target]
 ```
+```
+┌──(root㉿localhost)-[~]
+└─# nmap -sV 10.129.49.229        
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-09-01 23:10 EDT
+Nmap scan report for 10.129.49.229
+Host is up (0.35s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+23/tcp open  telnet  Linux telnetd
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 19.22 seconds
+```
 dari hasil scanning terlihat bahwa port yang open adalah port 23 dengan service telnet
+------------------------------------------------------------------------------------------------------
 
 Kemudian, kita coba telnet target untuk melihat file dan direktori target menggunakan command :
 ```
@@ -57,6 +74,6 @@ Selanjutnya, kita coba lihat list file dan direktori target dengan command :
 ls
 ```
 ternyata ada file bernama flag.txt, lalu open file tersebut dengan command :
-``
-`cat [nama file]
+```
+cat [nama file]
 ```
