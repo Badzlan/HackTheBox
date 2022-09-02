@@ -156,25 +156,25 @@ What service do we use to form our VPN connection into HTB labs?
 Answer : openvpn
 
 #### Task 4
-What does the acronym VM stand for?
-Answer : Virtual Machine
+What is the abbreviated name for a 'tunnel interface' in the output of your VPN boot-up sequence output?
+Answer : tun
 
 #### Task 5
-What does the acronym VM stand for?
-Answer : Virtual Machine
+What tool do we use to test our connection to the target with an ICMP echo request?
+Answer : ping
 
 #### Task 6
-What does the acronym VM stand for?
-Answer : Virtual Machine
+What is the name of the most common tool for finding open ports on a target?
+Answer : nmap
 
 #### Task 7
-What does the acronym VM stand for?
-Answer : Virtual Machine
+What service do we identify on port 23/tcp during our scans?
+Answer : telnet
 
 #### Task 8
-What does the acronym VM stand for?
-Answer : Virtual Machine
+What username is able to log into the target over telnet with a blank password?
+Answer : root
 
 #### Submit Flag
-What does the acronym VM stand for?
-Answer : Virtual Machine
+Submit root flag
+Answer : b40abdfe23665f766f9c61ecba8a4c19
