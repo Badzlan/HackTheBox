@@ -143,6 +143,6 @@ b40abdfe23665f766f9c61ecba8a4c19
 ------------------------------------------------------------------------------------------------------
 
 ### Walkthrough
-####Task 1
+#### Task 1
 What does the acronym VM stand for?
 Answer : Virtual Machine
