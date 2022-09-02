@@ -119,18 +119,23 @@ Last login: Mon Sep  6 15:15:23 UTC 2021 from 10.10.14.18 on pts/0
 
 ------------------------------------------------------------------------------------------------------
 
-
 Selanjutnya, kita coba lihat list file dan direktori target dengan command :
 ```
 ls
 ```
-ternyata ada file bernama flag.txt, lalu open file tersebut dengan command :
+```
+root@Meow:~# ls
+flag.txt  snap
+```
+ternyata ada file bernama flag.txt
+
+------------------------------------------------------------------------------------------------------
+
+Lalu open file tersebut dengan command :
 ```
 cat [nama file]
 ```
 ```
-root@Meow:~# ls
-flag.txt  snap
 root@Meow:~# cat flag.txt 
 b40abdfe23665f766f9c61ecba8a4c19
 ```
