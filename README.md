@@ -149,11 +149,11 @@ What does the acronym VM stand for?
 
 #### Task 2
 What tool do we use to interact with the operating system in order to issue commands via the command line, such as the one to start our VPN connection? It's also known as a console or shell.
-##### Answer : terminal
+##### Answer : Terminal
 
 #### Task 3
 What service do we use to form our VPN connection into HTB labs?
-##### Answer : openvpn
+##### Answer : OpenVPN
 
 #### Task 4
 What is the abbreviated name for a 'tunnel interface' in the output of your VPN boot-up sequence output?
