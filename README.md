@@ -145,7 +145,7 @@ b40abdfe23665f766f9c61ecba8a4c19
 ### Walkthrough
 #### Task 1
 What does the acronym VM stand for?
-##### Answer : '''Virtual Machine'''
+##### Answer : ''' Virtual Machine '''
 
 #### Task 2
 What tool do we use to interact with the operating system in order to issue commands via the command line, such as the one to start our VPN connection? It's also known as a console or shell.
